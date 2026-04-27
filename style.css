@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  margin: 0;
+  color: #151515;
+}
+
+/* TYPOGRAPHY */
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.logo-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  color: #0e0e0e;
+  white-space: nowrap;
+}
+
+.about-me-title {
+  font-size: 2.25rem;
+  margin-top: 0.75em;
+  margin-bottom: 0.45em;
+}
+
+.log-text,
+.about-me-title,
+.name-foot {
+  font-weight: bold;
+  line-height: 1.082;
+  letter-spacing: -3%;
+}
+
+.about-me-sub {
+  margin-bottom: 3.125em;
+}
+
+.article-body {
+  margin-bottom: 2.1815em;
+}
+
+.recent-posts-title {
+  font-size: 1rem;
+  color: #000000;
+  text-align: center;
+}
+
+/* Links */
+
+nav a {
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #090909;
+  text-decoration: none;
+}
+
+/* LAYOUT */
+
+.main-header,
+.main-container,
+.footer {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 1.25em;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.625em;
+}
+
+
+/* Main Header  */
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 0.1875em;
+  flex-shrink: 0;
+}
+
+.logo-img {
+  max-width: 25px;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  gap: 2em;
+  list-style-type: none;
+  padding: 0;
+}
+
+/* MAIN ARTICLE SECTION  */
+
+.main-article-img {
+  max-width: 182px;
+  width: 100%;
+}
+
+/* RECENT POSTS SECTION  */
+
+.article {
+  margin: 2.5625em 0;/
+}
+.article-image {
+  width: 100%;
+  max-width: 374px;
+  border-radius: 3;
+}
+
+.article-date {
+  display: block;
+  font-size: 0.875rem;
+  color: #000000;
+  margin-top: 1em;
+  margin-bottom: 1.56em;
+}
+
+.article-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.082;
+  color: #141414;
+  margin: 0.375em 0;
+}
+
+.article-body-preview {
+  color: #505050;
+  line-height: 1.25;
+  margin: 0.5625em 0;
+}
+
+/* FOOTER SECTION  */
+
+footer {
+  background-color: #202020;
+  height: 105px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.name-foot {
+  font-size: 0.75rem;
+  color: #ececec;
+}
+
+.copyright-foot {
+  font-size: 0.75rem;
+  line-height: 1.25;
+  color: #d7d7d7;
+}
