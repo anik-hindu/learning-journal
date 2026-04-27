@@ -69,6 +69,45 @@ nav a {
   font-size: 0.75rem;
   color: #090909;
   text-decoration: none;
+  transition:
+    color 0.3s ease,
+    border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.25rem;
+}
+
+nav a:hover {
+  color: #505050;
+  border-bottom: 2px solid #090909;
+}
+
+.view-more-btn {
+  display: block;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: bold;
+  border: none;
+  text-decoration: underline;
+  margin: 0 auto;
+  margin-top: 3em;
+  margin-bottom: 3.643em;
+  cursor: pointer;
+  transition:
+    color 0.3s ease,
+    text-decoration-thickness 0.3s ease;
+  color: #090909;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.view-more-btn:hover {
+  color: #505050;
+  text-decoration-thickness: 3px;
+}
+
+.view-more-btn:active {
+  transform: scale(0.98);
 }
 
 /* LAYOUT */
@@ -108,20 +147,6 @@ nav ul {
   gap: 2em;
   list-style-type: none;
   padding: 0;
-}
-
-.view-more-btn {
-  display: block;
-  background-color: transparent;
-  font-family: inherit;
-  font-size: 0.875rem;
-  font-weight: bold;
-  border: none;
-  text-decoration: underline;
-  margin: 0 auto;
-  margin-top: 3em;
-  margin-bottom: 3.643em;
-  cursor: pointer;
 }
 
 /* MAIN ARTICLE SECTION  */
@@ -183,8 +208,40 @@ nav ul {
   display: grid;
   row-gap: 2.875em;
 }
+.featured-link {
+  text-decoration: none;
+  transition: box-shadow 0.3s ease;
+  display: block;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.featured-link:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.featured-link:hover .featured-article-title {
+  text-decoration: underline;
+}
 
 /* RECENT POSTS SECTION  */
+
+.article {
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  cursor: pointer;
+}
+
+.article:hover {
+  opacity: 0.9;
+  transform: translateY(-4px);
+}
+
+.article:hover .article-title {
+  color: #505050;
+  transition: color 0.3s ease;
+}
 
 .article-listing-section {
   display: flex;
@@ -223,11 +280,42 @@ nav ul {
   margin: 0.5625em 0;
 }
 
+.home-article {
+  height: 393px;
+  width: 309px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.home-article:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.article-image {
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.home-article:hover .article-image {
+  transform: scale(1.05);
+  filter: brightness(0.95);
+}
+
 /* FOOTER SECTION  */
 
 footer {
   background-color: #202020;
   height: 105px;
+  transition: background-color 0.3s ease;
+}
+
+footer:hover {
+  background-color: #1a1a1a;
 }
 
 .footer {
