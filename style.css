@@ -12,6 +12,14 @@ body {
 
 /* TYPOGRAPHY */
 
+header {
+  background-color: white;
+}
+
+h1 {
+  margin: 0;
+}
+
 h3 {
   margin: 0;
 }
@@ -33,16 +41,12 @@ p {
   margin-bottom: 0.45em;
 }
 
-.log-text,
+.logo-text,
 .about-me-title,
 .name-foot {
   font-weight: bold;
   line-height: 1.082;
   letter-spacing: -3%;
-}
-
-.about-me-sub {
-  margin-bottom: 3.125em;
 }
 
 .article-body {
@@ -53,6 +57,10 @@ p {
   font-size: 1rem;
   color: #000000;
   text-align: center;
+}
+
+.no-margin-top {
+  margin-top: 0;
 }
 
 /* Links */
@@ -79,9 +87,8 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.625em;
+  height: 59px;
 }
-
 
 /* Main Header  */
 
@@ -110,16 +117,29 @@ nav ul {
   max-width: 182px;
   width: 100%;
 }
+.about-me-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.625em;
+  padding-bottom: 3.125em;
+}
 
 /* RECENT POSTS SECTION  */
 
-.article {
-  margin: 2.5625em 0;/
+.article-listing-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.625em;
+  margin-top: 1.75em;
+  margin-bottom: 3.5em;
 }
+
 .article-image {
   width: 100%;
   max-width: 374px;
   border-radius: 3;
+  flex: 0;
 }
 
 .article-date {
@@ -167,4 +187,52 @@ footer {
   font-size: 0.75rem;
   line-height: 1.25;
   color: #d7d7d7;
+}
+
+/* MEDIA QUERIES  */
+
+@media (min-width: 1024px) {
+  main {
+    background-color: #fafafa;
+  }
+
+  .main-header,
+  .main-container,
+  .footer {
+    max-width: 1085px;
+  }
+
+  .main-header {
+    height: 83px;
+  }
+  .logo-img {
+    max-width: 35px;
+  }
+
+  .logo-text {
+    font-size: 1.25rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .about-me-hero {
+    flex-direction: row;
+    gap: 2.0625em;
+    padding-top: 6.9375em;
+    padding-bottom: 6.1875em;
+  }
+
+  .article-body-title {
+    font-size: 1.25rem;
+  }
+
+  .recent-posts-title {
+    font-size: 1.5rem;
+  }
+
+  .article-listing-section {
+    flex-direction: row;
+  }
 }
