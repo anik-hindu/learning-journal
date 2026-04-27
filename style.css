@@ -179,6 +179,11 @@ nav ul {
   text-decoration: none;
 }
 
+.article-home-section {
+  display: grid;
+  row-gap: 2.875em;
+}
+
 /* RECENT POSTS SECTION  */
 
 .article-listing-section {
