@@ -41,7 +41,8 @@ h3 {
 .logo-text,
 .about-me-title,
 .name-foot,
-.main-article-title {
+.main-article-title,
+.featured-article-title {
   font-weight: bold;
   line-height: 1.082;
   letter-spacing: -3%;
@@ -109,6 +110,20 @@ nav ul {
   padding: 0;
 }
 
+.view-more-btn {
+  display: block;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: bold;
+  border: none;
+  text-decoration: underline;
+  margin: 0 auto;
+  margin-top: 3em;
+  margin-bottom: 3.643em;
+  cursor: pointer;
+}
+
 /* MAIN ARTICLE SECTION  */
 
 .main-article-time {
@@ -135,6 +150,33 @@ nav ul {
   align-items: center;
   padding-top: 1.625em;
   padding-bottom: 3.125em;
+}
+
+.featured-article {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("./images/article-image-four.png");
+  background-size: cover;
+  max-width: 480px;
+  height: 293px;
+  width: 100%;
+  color: white;
+  padding: 0 1.25em;
+  margin: 0 auto;
+  margin-bottom: 3.3125em;
+}
+
+.featured-container {
+  margin-top: auto;
+}
+
+.featured-article-title {
+  font-size: 2rem;
+  margin: 0.25em 0;
+}
+
+.featured-link {
+  text-decoration: none;
 }
 
 /* RECENT POSTS SECTION  */
@@ -264,5 +306,21 @@ footer {
 
   .article-listing-section {
     flex-direction: row;
+  }
+
+  .featured-article {
+    max-width: 1085px;
+    height: 488px;
+  }
+
+  .article-home-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.875em 1.625em;
+  }
+
+  .home-article {
+    height: 393px;
+    width: 309px;
   }
 }
